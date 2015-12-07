@@ -1,5 +1,5 @@
 ---
   applications:
-  - name: MockServer-node
-    host: MockServer-node
+  - name: mockserver-node
+    host: mockserver-node
     memory: 128M

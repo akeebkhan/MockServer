@@ -1,36 +1,27 @@
 {
-  "name": "MockServer-node",
-  "version": "1.0.0",
+  "name": "mockserver-node",
+  "version": "0.0.0",
   "description": "A quick and simple yet highly customisable mocking server for APIs",
   "author": "Richard Scoones <richard.scoones@gmail.com>",
 
-  "devDependencies": {
+  "dependencies": {
     "express": "~4.x",
     "express-http-proxy": "^0.6.0",
     "commander": "^2.6.0",
     "http-post": "^0.1.1",
     "http-proxy": "^1.8.1",
     "cf-deployment-tracker-client": "*",
-    "gulp": "^3.8.7",
+    "gulp": "^3.8.7"
 
   },
 
   "main": "server.js",
   "scripts": {
-    "start": "node apps/MockSever/server.js",
-
-    "build-ui": "node node_modules/webpack/bin/webpack.js --config apps/MockServerUI/js/webpack.config.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
     "url": "git@github.com:akeebkhan/MockServer.git"
-  },
+  }
 
-  "dependencies": {},
-
-  "engines": {
-		"node": "0.12.x"
-	},
-
-  "license": "MIT"
 }
