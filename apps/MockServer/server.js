@@ -6,7 +6,7 @@ var bodyParser = require('body-parser');
 // helpers
 var validateConfig = require('./helpers/validateConfig');
 var makeRoutes = require('./helpers/makeRoutes');
-
+var port = process.env.VCAP_APP_PORT || 8080;
 module.exports = {
   start: function(config) {
     validateConfig(config)
@@ -24,7 +24,7 @@ function createServer() {
 
   return app;
 }
-
+app.listen(port);
 function startServer(app, config) {
   var server = app.listen(config.port, function () {
     console.log("");
