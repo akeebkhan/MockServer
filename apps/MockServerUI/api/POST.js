@@ -1,3 +1,4 @@
+/*eslint-env node */
 var response = require('../../MockServer/service/response');
 
 module.exports = function(req, config) {

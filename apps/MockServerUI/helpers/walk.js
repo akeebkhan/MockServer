@@ -1,3 +1,4 @@
+/*eslint-env node */
 var fs = require('fs');
 
 module.exports = walk;

@@ -1,3 +1,4 @@
+/*eslint-env node */
 var found = require('./found');
 
 module.exports = function(req, res, obj) {

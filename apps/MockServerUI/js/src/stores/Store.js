@@ -8,8 +8,8 @@ let _data = [];
 let _selected = null;
 
 let Store = assign({}, BaseStore, {
-  get() {
-    return _data;
+   get(){
+    return_data;
   },
 
   getSelected() {

@@ -1,3 +1,4 @@
+/*globals emitChange */
 var assign = require('object-assign');
 var EventEmitter = require('events').EventEmitter;
 
@@ -18,4 +19,5 @@ module.exports = assign({}, EventEmitter.prototype, {
   emitChange() {
     this.emit(CHANGE_EVENT);
   }
+  
 });

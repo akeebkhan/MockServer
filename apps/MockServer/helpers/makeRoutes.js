@@ -1,3 +1,4 @@
+/*eslint-env node */
 var path = require('path');
 var response = require('../service/response');
 var respond = require('./respond');

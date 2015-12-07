@@ -1,3 +1,4 @@
+/*eslint-env node */
 module.exports = {
   toURL: function(str) {
     return str.replace(/_([a-z]*)_/g, ":$1");

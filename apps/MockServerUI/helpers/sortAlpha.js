@@ -1,3 +1,4 @@
+/*eslint-env node */
 module.exports = function(arr, key) {
   arr.sort(function(a, b) {
     if (a[key] > b[key]) {

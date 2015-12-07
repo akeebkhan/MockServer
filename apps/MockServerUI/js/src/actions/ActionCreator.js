@@ -1,10 +1,12 @@
+/*eslint-env node */
+/*globals url select*/
 var xhr = require('xhr');
 var qs = require('qs');
 var AppDispatcher = require('AppDispatcher');
 var Constants = require('MockServerUI/constants/Constants');
 
 module.exports = {
-  load() {
+  load: function() {
     xhr({
       method: "GET",
       uri: "api"
@@ -16,7 +18,7 @@ module.exports = {
       });
     });
   },
-  select(url) {
+  select: function(url) {
     if (url) {
       let query = qs.stringify({url: url.url});
       xhr({
@@ -30,7 +32,7 @@ module.exports = {
       _setSelected(null, null);
     }
   },
-  save(selected, obj, method) {
+  save: function(selected, obj, method) {
     console.log(selected, obj);
     var data = {url: selected.url.url, method: method, data: JSON.stringify(obj)};
     xhr({
